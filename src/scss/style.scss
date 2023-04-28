@@ -1,152 +1,81 @@
-@import './variables.scss';
-@import './mixins.scss';
-@import './functions.scss';
-
-// Сброс настроек
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+@import "~bootstrap/scss/bootstrap";
+.amogus{
+    margin: auto;
+    margin-left: 10px;
+    font-size: 22px;
 }
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-html {
-	height: 100%;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-.wrapper{
-    width: $container_width;
-    margin-left: 18vw;
-    margin-right: 18vw;
-}
-header{
-    .container{
-        width: $container_width;
-        height: 40px;
-        background-color: $lightgray;
-        margin: auto;
-        border: 2px solid $gray;
-        display: flex;
-        flex-direction: row;
-        .blue_cube{
-            @include blue-cube;
-            margin-left: 100px;
-            margin-bottom: 10px;
-        }
-        .site_text{
-            color: $blue;
-            font-size: 13px;
-            margin-left: 15px;
-            margin-top: 1vw;
-        }
-        button{
-            background-color: $blue;
-            border-radius: 10px;
-            border: 1px solid $white;
-            width: 60px;
-            height: 25px;
-            color: $white;
-            margin-left: auto;
-            margin-right: 100px;
-            margin-top: 7px;
-            .button_text{
-                font-size: 10px;
-                color: $white;
-                margin: auto;
-            }
-        }
+.cube_with_information{
+    width: 200px;
+    height: 300px;
+    h4{
+        font-weight: bold;
+        font-size: 20px;
+        background-color: $white;
+    }
+    .text_in_grid-container{
+        margin-top: 5px;
+        font-size: 15px;
+        background-color: $white;
     }
 }
-main{
-    .main-container{
-        margin-left: 7vw;
-        margin-top: 10px;
-        h2{
-            font-size: 25px;
-        }
-        .grid-container{
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            row-gap: 20px;
-            column-gap: 40px;
-            width: 850px;
-            margin-top: 10px;
-            .cube_with_information{
-                width: 200px;
-                height: 300px;
-                @include gradient(5);
-                .square{
-                    @include square;
-                }
-                h4{
-                    font-weight: bold;
-                    font-size: 20px;
-                    background-color: $white;
-                }
-                .text_in_grid-container{
-                    margin-top: 5px;
-                    font-size: 15px;
-                    background-color: $white;
-                }
-            }
-        }
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #dc3545;
+}
+.card {
+    height: 40em;
+    img {
+        height: 30em;
     }
+}
+.card-body{
+    background-color: #212529;
+}
+.Atomic{
+    background-color: #212529;
+    color: #dc3545;
+    border: 2px solid #dc3545;
+    border-radius: 5px;
+}
+.row {
+    margin: auto;
+    justify-content: center;
 }
 footer{
-    .line{
-        border: solid $black 1px;
-    }
-    .low-panel{
-        display: flex;
-        flex-direction: row;
-    }
-    .author-Signa{
-        margin-left: 7vw;
-        font-size: 25px;
-        font-weight: bold;
-    }
-    .icons{
-        margin-left: auto;
-        margin-right: 7vw;
-        img{
-            width: 50px;
-            height: 50px;
-        }
-    }
+    color:#dc3545;
+    background-color: #212529;
+    border-top: 1px solid white;
+    margin-top: 45px;
+}
+.card-img-top{
+    object-fit: cover;
+    height: 100%;
+}
+.myclass{
+    margin: 0 auto;
 }
 
+.cl{
+    margin: 20px 0;
+}
+main{
+    color: #dc3545;
+}
+.signature{
+    text-align: center;
+}
+.last-logo{
+    width: 50px;
+}
+.my-name{
+    margin-left: 10px;
+    align-items: left;
+}
+.icons{
+    width: 50px;
+}
+base{
+    margin: 5px;
+}
