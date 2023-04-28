@@ -4,13 +4,126 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./scss/style.scss">
     <title>Document</title>
 </head>
 <body>
+    <div class="bg-image" style="background-image: url(1.jpg)">
+        <header>
+            <nav class="navbar navbar-dark bg-dark">
+                <div class="container">
+                    <div class="navbar-brand d-flex align-items-center">
+                        <img src="main_2x.jpg" width="100" height="100" alt="" class="plank img-fluid">
+                        <a href="#" class="text-danger" style="text-decoration: none;">
+                            <p class="amogus">Сад теней</p>
+                        </a>
+                    </div>
+                    <button type="button" class="Atomic">Atomic</button>
+                </div>
+            </nav>
+        </header>
+        <main>
+          <div class = "row signature">
+            <h1>Состав сада теней</h1>
+          </div>
+          <div class="container">
+            <div class="row row-cols-xs-1 row-cols-sm-1 row-cols-md-3 row-cols-lg-3 row-cols-xl-3 myclass">
+              <div class="col-12 col-sm-8 col-md-4 col-lg-4 col-xl-4 g-3 cl">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#modal" id="object-1">
+                  <img src="5.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Тень</h5>
+                    <p class="card-text">Лидер секретной организации "Сад Теней"</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-8 col-md-4 col-lg-4 col-xl-4 g-3 cl">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#modal" id="object-2">
+                  <img src="1.webp" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Альфа</h5>
+                    <p class="card-text">Заместитель командира Сада Теней, руководящий всеми вылазками организации</p>
 
-    <script type="module" src="js/index.js"></script>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-8 col-md-4 col-lg-4 col-xl-4 g-3 cl">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#modal" id="object-3">
+                  <img src="2.webp" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Бета</h5>
+                    <p class="card-text">Второй участник "Сада Теней", занимающийся сбором информации в рядах противника</p>
 
-  </body>
-  
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-8 col-md-4 col-lg-4 col-xl-4 g-3 cl">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#modal" id="object-4">
+                  <img src="4.webp" class="card-img-top img-fluid" alt="-">
+                  <div class="card-body">
+                    <h5 class="card-title">Гамма</h5>
+                    <p class="card-text">Третий участник "Сада Теней", управляющий внутренними делами организации, финансами и логистикой.</p>
+        
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-8 col-md-4 col-lg-4 col-xl-4 g-3 cl">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#modal" id="object-5">
+                  <img src="3.webp" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Дельта</h5>
+                    <p class="card-text">Четвертый участник "Сада Теней", являющийся основной ударной силой "Сада Теней"</p>
+        
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel" popover.hover.top="Popover!" title="Бутерброд">Modal title</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" popover.hover.top="Popover!" title="Состав">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" popover.hover.top="Popover!" title="Закрыть">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="position-fixed top-0 end-0 p-3">
+            <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                  <strong class="me-auto">Err00r</strong>
+                  <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                  I am Atomic!
+                </div>
+              </div>
+          </div>
+        </main>
+        <footer>
+          <div class="container d-flex justify-content-between">
+            <div class="about font-weight-bold">Сaгадеев Артур</div>
+            <div class="base">
+              <a href=""
+                ><img src="f1.png" alt="vk" class="icons"
+              /></a>
+              <a href=""
+                ><img src="f2.png" alt="instagram" class="icons"
+              /></a>
+              <a href=""
+                ><img src="f3.png" alt="twitter" class="icons"
+              /></a>
+            </div>
+          </div>
+        </footer>
+    </div>
+  <script type="module" src="js/index.js"></script>
+</body>
 </html>
