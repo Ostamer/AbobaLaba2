@@ -1,0 +1,32 @@
+[
+    {
+      "id": 1,
+      "img": "https://cn.e.pic.mangatoon.mobi/cartoon-posters/59645d8d.jpg",
+      "name": "Тень",
+      "description": "Лидер секретной организации 'Сад Теней'"
+    },
+    {
+      "id": 2,
+      "img": "https://static.wikia.nocookie.net/to-be-a-power-in-the-shadows/images/f/fd/Alpha_portrait_LN.jpg",
+      "name": "Альфа",
+      "description": "Заместитель командира Сада Теней, руководящий всеми вылазками организации"
+    },
+    {
+      "id": 3,
+      "img": "https://static.wikia.nocookie.net/to-be-a-power-in-the-shadows/images/2/20/Beta_portrait_LN.jpg",
+      "name": "Бета",
+      "description": "Второй участник 'Сада Теней', занимающийся сбором информации в рядах противника"
+    },
+    {
+      "id": 4,
+      "img": "https://static.wikia.nocookie.net/to-be-a-power-in-the-shadows/images/7/75/Gamma_portrait_LN.jpg",
+      "name": "Гамма",
+      "description": "Третий участник 'Сада Теней', управляющий внутренними делами организации, финансами и логистикой."
+    },
+    {
+      "id": 5,
+      "img": "https://static.wikia.nocookie.net/to-be-a-power-in-the-shadows/images/3/30/Delta_portrait_LN.jpg",
+      "name": "Дельта",
+      "description": "Четвертый участник 'Сада Теней', являющийся основной ударной силой 'Сада Теней'"
+    }]
+  

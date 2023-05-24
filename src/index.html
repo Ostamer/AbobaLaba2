@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -73,7 +73,6 @@
                   <div class="card-body">
                     <h5 class="card-title">Дельта</h5>
                     <p class="card-text">Четвертый участник "Сада Теней", являющийся основной ударной силой "Сада Теней"</p>
-        
                   </div>
                 </div>
               </div>
@@ -126,4 +125,38 @@
     </div>
   <script type="module" src="js/index.js"></script>
 </body>
+</html> -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Website</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./scss/style.scss"> 
+  </head>
+  <body>
+    <div class="bg-image" style="background-image: url(1.jpg)">
+      <nav class="navbar navbar-dark bg-dark" id="nav"></nav>
+      <main>
+        <div class = "row signature">
+          <h1>Состав сада теней</h1>
+        </div>
+        <div class="container">
+          <div class="row row-cols-md-3 g-3" id="cards"></div>
+        </div>
+      </main>
+
+      <footer id = "footer"></footer>
+
+      <div id="modal_1"></div>
+      <div id="new_modal"></div>
+    </div>
+    <script type="module" src="./index.js"></script>
+    <script type="module" src="../node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script type="module" src="../node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script type="module" src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="module" src="./script/script.js"></script>
+
+  </body>
 </html>
