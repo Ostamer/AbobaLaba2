@@ -18,9 +18,9 @@ $(document).ready(() => {
     });
     const current = cardsList.findIndex(element => element == modal.attr("current-item"));
 
-    if(current == -1){
-      throw new Error("invalid card index");
-    }
+    // if(current == -1){
+    //   throw new Error("invalid card index");
+    // }
     
     if($(this).hasClass("btn-prev")){
       const prevSlide = current > 0 ? cardsList[current-1] : cardsList[cardsList.length - 1];
@@ -46,9 +46,8 @@ $('#toastbtn').on('click', () => {
 });
 
 
-
 import data from '../../data/objects.json';
-import template1 from '../../view/comp/cards.hbs';
+import template1 from '../view/comp/cards.hbs';
 
 const objects = [];
 objects.push(...data);
