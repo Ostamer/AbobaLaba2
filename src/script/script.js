@@ -1,5 +1,11 @@
 import $ from 'jquery';
+import * as bootstrap from 'bootstrap';
 import { initTooltips, fillModal, navigateCards } from './utils';
+import data from '../../data/objects.json';
+import template1 from '../view/comp/cards.hbs';
+
+
+console.log("Мы зашли в script.js");
 
 $(document).ready(() => {
   initTooltips();
@@ -18,9 +24,9 @@ $(document).ready(() => {
     });
     const current = cardsList.findIndex(element => element == modal.attr("current-item"));
 
-    // if(current == -1){
-    //   throw new Error("invalid card index");
-    // }
+    if(current == -1){
+      throw new Error("invalid card index");
+    }
     
     if($(this).hasClass("btn-prev")){
       const prevSlide = current > 0 ? cardsList[current-1] : cardsList[cardsList.length - 1];
@@ -30,24 +36,24 @@ $(document).ready(() => {
       fillModal(modal, $(document).find(`#${nextSlide}`));
     }
   });
-});
+  const loadButton = $('#toastbtn');
+console.log(loadButton);
+console.log("Длина");
+console.log($(document).find('#new-card-modal').length);
+const newCardModal = new bootstrap.Modal($('#new-card-modal'));
+console.log($('#new-card-modal'));
+console.log("Hello");
 
-
-
-const loadButton = $('#toastbtn')[0];
-const newCardModal = new bootstrap.Modal($('#new-card-modal')[0]);
 const newCardForm = $('#new-card-form')[0];
 const saveNewButton = $('#save-new-button')[0];
 const saveButton = $('#save-button')[0];
 
 $('#toastbtn').on('click', () => {
   $('#new-img, #new-name, #new-description').val('');
+
   newCardModal.show();
 });
 
-
-import data from '../../data/objects.json';
-import template1 from '../view/comp/cards.hbs';
 
 const objects = [];
 objects.push(...data);
@@ -116,6 +122,8 @@ saveButton.addEventListener('click', (event) => {
   let app = document.getElementById('cards');
   app.innerHTML = html;
 });
+});
+
 
 
 

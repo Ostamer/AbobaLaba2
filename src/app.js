@@ -1,4 +1,4 @@
-import bootstrap from 'bootstrap';
+// import * as bootstrap from 'bootstrap';
 import Handlebars from 'handlebars';
 // const template1 = require("./view/comp/cards.hbs");
 // const template2 = require("./view/comp/header.hbs");
@@ -6,8 +6,8 @@ import Handlebars from 'handlebars';
 // const template4 = require("./view/comp/modal.hbs");
 // const template5 = require("./view/comp/modal_new.hbs");
 import template1 from "./view/comp/cards.hbs";
-import template2 from "./view/comp/header.hbs";
-import template3 from "./view/comp/footer.hbs";
+import template3 from "./view/comp/header.hbs";
+import template2 from "./view/comp/footer.hbs";
 import template4 from "./view/comp/modal.hbs";
 import template5 from "./view/comp/modal_new.hbs";
 
@@ -31,16 +31,25 @@ xhttp_select.addEventListener('readystatechange', function(){
 
 const render = (info) => {
   console.log("функция render() вызвана");
-
+  console.log(info)
+  const formattedData = {
+    objects: info.map(item => ({
+      id: item.id,
+      img: item.img,
+      name: item.name,
+      description: item.description
+    }))
+  };
+  info = formattedData;
   let html = template1(info);
+  console.log(info)
   let app = document.getElementById('cards');
+  app.innerHTML = html;
+  html = template3();
+  app = document.getElementById('nav');
   app.innerHTML = html;
   html = template2();
   app = document.getElementById('footer');
-  app.innerHTML = html;
-
-  html = template3();
-  app = document.getElementById('nav');
   app.innerHTML = html;
 
   html = template4();

@@ -9,4 +9,4 @@ $jsonData = json_decode($data, true);
 
 // Отправляем JSON данные на фронтенд
 header('Content-Type: application/json');
-echo json_encode($data);
+echo json_encode($jsonData);

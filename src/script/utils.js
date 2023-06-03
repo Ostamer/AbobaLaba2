@@ -1,4 +1,5 @@
 import $ from 'jquery';
+import * as bootstrap from 'bootstrap';
 // window.bootstrap = require('bootstrap/dist/js/bootstrap.js');
 
 export const initTooltips = () => {
