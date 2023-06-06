@@ -2,7 +2,7 @@ import $ from 'jquery';
 import * as bootstrap from 'bootstrap';
 import { initTooltips, fillModal, navigateCards } from './utils';
 import data from '../../data/objects.json';
-import template1 from '../view/comp/cards.hbs';
+import template1 from '../comp/cards.hbs';
 
 
 console.log("Мы зашли в script.js");
@@ -123,7 +123,6 @@ saveButton.addEventListener('click', (event) => {
   app.innerHTML = html;
 });
 });
-
 
 
 
