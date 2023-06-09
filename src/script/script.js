@@ -2,7 +2,7 @@ import $ from 'jquery';
 import * as bootstrap from 'bootstrap';
 import { initTooltips, fillModal, navigateCards } from './utils';
 import data from '../../data/objects.json';
-import template1 from '../comp/cards.hbs';
+import template1 from '../cards.hbs';
 
 
 console.log("Мы зашли в script.js");
@@ -55,20 +55,20 @@ $('#toastbtn').on('click', () => {
 });
 
 
-const objects = [];
-objects.push(...data);
+// const objects = [];
+// objects.push(...data);
 
 function renderCards() {
-  const html = template1({ objects });
-  cards.innerHTML = html;
+  // const html = template1({ objects });
+  // cards.innerHTML = html;
 }
 
 
 saveNewButton.addEventListener('click', (event) => {
-  const newModal = $('#new-card-modal');
-  const newimg = $('#new-img').val();
-  const newName = $('#new-name').val();
-  const newDescription = $('#new-description').val();
+  // const newModal = $('#new-card-modal');
+  // const newimg = $('#new-img').val();
+  // const newName = $('#new-name').val();
+  // const newDescription = $('#new-description').val();
 
   // if (!newimg || !newName) {
   //   alert("Заполните все поля формы!");
@@ -79,30 +79,30 @@ saveNewButton.addEventListener('click', (event) => {
   //   return;
   // }
 
-  const newObject = {
-    id: objects.length + 1,
-    img: newimg,
-    name: newName,
-    description: newDescription
-  };
+  // const newObject = {
+  //   id: objects.length + 1,
+  //   img: newimg,
+  //   name: newName,
+  //   description: newDescription
+  // };
 
-  objects.push(newObject);
-  let html = template1({objects});
-  let app = document.getElementById('cards');
-  app.innerHTML = html;
+  // objects.push(newObject);
+  // let html = template1({objects});
+  // let app = document.getElementById('cards');
+  // app.innerHTML = html;
 
-  event.preventDefault();
+  // event.preventDefault();
 
-  const bootstrapModal = bootstrap.Modal.getInstance(newModal);
-  bootstrapModal.hide();
+  // const bootstrapModal = bootstrap.Modal.getInstance(newModal);
+  // bootstrapModal.hide();
 });
 
 
 saveButton.addEventListener('click', (event) => {
-  const newModal = $('#card-modal');
-  const newimg = $('#img').val();
-  const newName = $('#name').val();
-  const newDescription = $('#description').val();
+  // const newModal = $('#card-modal');
+  // const newimg = $('#img').val();
+  // const newName = $('#name').val();
+  // const newDescription = $('#description').val();
 
   // if (!newimg || !newName) {
   //   alert("Заполните все поля формы!");
@@ -113,16 +113,17 @@ saveButton.addEventListener('click', (event) => {
   //   return;
   // }
 
-  const id = $('#modal').attr('current-item');
-  const elements = id.split('-').slice(1) - 1;
-  objects[elements].img = $('#img').val();
-  objects[elements].name = $('#name').val();
-  objects[elements].description = $('#description').val();
-  let html = template1({objects});
-  let app = document.getElementById('cards');
-  app.innerHTML = html;
+  // const id = $('#modal').attr('current-item');
+  // const elements = id.split('-').slice(1) - 1;
+  // objects[elements].img = $('#img').val();
+  // objects[elements].name = $('#name').val();
+  // objects[elements].description = $('#description').val();
+  // let html = template1({objects});
+  // let app = document.getElementById('cards');
+  // app.innerHTML = html;
 });
 });
+
 
 
 

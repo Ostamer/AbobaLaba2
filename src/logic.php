@@ -1,6 +1,9 @@
 <?php
 header('Access-Control-Allow-Origin: *');
 
+session_start();
+$_SESSION[] = 'HELLO SESSION';
+
 $connect = mysqli_connect('localhost', 'root', '', 'eminence_in_shadow');
 if ($connect === false)
 {
@@ -17,6 +20,7 @@ if ($result=mysqli_query($connect,$sql))
     }
 
     header('Content-Type: application/json');
+    // echo json_encode($helloResult);
     echo json_encode($helloResult);
 }
 else

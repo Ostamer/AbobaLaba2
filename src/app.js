@@ -1,9 +1,9 @@
 import Handlebars from 'handlebars';
-import template1 from "./comp/cards.hbs";
-import template3 from "./comp/header.hbs";
-import template2 from "./comp/footer.hbs";
-import template4 from "./comp/modal.hbs";
-import template5 from "./comp/modal_new.hbs";
+import template1 from "./cards.hbs";
+import template3 from "./header.hbs";
+import template2 from "./footer.hbs";
+import template4 from "./modal.hbs";
+import template5 from "./modal_new.hbs";
 
 
 let xhttp_select = new XMLHttpRequest();

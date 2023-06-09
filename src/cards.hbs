@@ -5,8 +5,10 @@
         <div class="card-body">
           <h5 class="card-title">{{name}}</h5>
           <p class="card-text">{{description}}</p>
+          <a href="http://rhp/src/delete.php?id={{id}}">удалить запись</a>
         </div>
         <div hidden class="card-img-top">{{img}}</div>
+        <input type="hidden" id="card_id" class="id_card_class" value="{{id}}">
       </div>  
     </div>
 {{/each}}

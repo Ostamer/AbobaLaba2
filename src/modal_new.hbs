@@ -6,7 +6,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <form id="new-card-form">
+        <form id="new-card-form" action="http://rhp/src/insert.php">
           <div class="mb-3">
             <label for="new-img" class="form-label">Картинка</label>
             <input type="text" class="form-control" id="new-img" name="new-img">
@@ -19,12 +19,14 @@
             <label for="description" class="form-label">Описание</label>
             <textarea class="form-control" id="new-description" name="new-description"></textarea>
           </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Отмена</button>
+              {{!-- <button type="button" class="btn btn-primary" id="save-new-button">Сохранить</button> --}}
+              <input type="submit" class="btn btn-primary" id="save-new-button" value="Сохранить">
+            </div>
         </form>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Отмена</button>
-        <button type="button" class="btn btn-primary" id="save-new-button">Сохранить</button>
-      </div>
+
     </div>
   </div>
 </div>
